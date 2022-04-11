@@ -52,7 +52,7 @@
     </div><!-- End Logo -->
 
     <div class="search-bar">
-      <form class="search-form d-flex align-items-center" method="GET" action="{% url 'employee_list' %}">
+      <form class="search-form d-flex align-items-center" method="GET" action="{% url 'worker_list' %}">
         <input type="text" name="query" placeholder="Search" title="Enter search keyword">
         <button type="submit" title="Search"><i class="bi bi-search"></i></button>
       </form>
@@ -83,12 +83,12 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="{% url 'employee_create' %}">
+            <a href="{% url 'worker_create' %}">
               <i class="bi bi-circle"></i><span>Создать сотрудника</span>
             </a>
           </li>
           <li>
-            <a href="{% url 'employee_list' %}">
+            <a href="{% url 'worker_list' %}">
               <i class="bi bi-circle"></i><span>Список Сотрудников</span>
             </a>
           </li>

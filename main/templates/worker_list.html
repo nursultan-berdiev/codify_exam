@@ -22,15 +22,15 @@
               </tr>
             </thead>
             <tbody>
-              {% for employee in object_list %}
+              {% for worker in object_list %}
               <tr>
-                <th scope="row">{{employee.id}}</th>
-                <td>{{employee.name}}</td>
-                <td>{{employee.birth_date}}</td>
-                <td>{{employee.work_position}}</td>
-                <td>{{employee.experience}}</td>
-                <td>{{employee.passport.inn}}</td>
-                <td><a href="{% url 'employee_detail' employee.id %}" class="btn btn-primary"> Подробнее </a></td>
+                <th scope="row">{{worker.id}}</th>
+                <td>{{worker.fullname}}</td>
+                <td>{{worker.birth_date}}</td>
+                <td>{{worker.work_position}}</td>
+                <td>{{worker.work_experience}}</td>
+                <td>{{worker.document.inn}}</td>
+                <td><a href="{% url 'worker_detail' worker.id %}" class="btn btn-primary"> Подробнее </a></td>
               </tr>
               {% endfor %}
             </tbody>
